@@ -1,0 +1,21 @@
+%Define two matrices A and B 
+A = input('Enter matrix A (ex [1 2; 3 4]): ');
+B = input('Enter matrix B (ex [5 6; 7 8]): ');
+
+%Print the max value from matrix A
+max_value_A = max(A(:));
+fprintf('The maximum value in matrix A is: %f\n', max_value_A);
+
+%Multiply matrix A and B
+[mA, nA] = size(A);
+[mB, nB] = size(B);
+
+if nA == mB
+    % Matrix multiplication is possible
+    result_matrix = A * B;
+    fprintf('Matrix A multiplied by B:\n');
+    disp(result_matrix);
+else
+    % Matrix multiplication is not possible
+    fprintf('Matrix A and B cannot be multiplied due to incompatible dimensions.\n');
+end
