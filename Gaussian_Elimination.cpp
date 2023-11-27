@@ -43,5 +43,10 @@ int main()
     cout<<"\nThe values of the variables a1, a2 and a3 are as follows:\n";
     for (i=0;i<n;i++)
         cout <<"a"<<i+1<< " " << "=" << " " << x[i] << endl;
+
+    //for finding the velocity at t=6 seconds
+    float v_6 = x[0]*6*6+x[1]*6+x[2];
+    cout<<endl << "The velocity at t=6 seconds: " << endl;
+    cout<< v_6 << " " << "m/s" << endl;
     return 0;
 }
